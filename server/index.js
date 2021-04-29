@@ -6,10 +6,13 @@ const jwt = require('jsonwebtoken');
 const User = require('./models/User');
 const bcrypt = require('bcrypt');
 const Todo = require('./models/Todo');
+const mongoose = require('mongoose');
+const dotenv = require("dotenv");
+dotenv.config();
 
 mongoose.connect(
   process.env.DB_CONNECT,
-  { useNewUrlParser: true },
+  { useNewUrlParser: true , useUnifiedTopology: true },
   () => console.log("Connected To DB!")
 );
 
