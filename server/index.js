@@ -13,7 +13,7 @@ dotenv.config();
 mongoose.connect(
   process.env.DB_CONNECT,
   { useNewUrlParser: true , useUnifiedTopology: true },
-  () => console.log("Connected To DB!")
+  () => console.log("Connected To DB! ")
 );
 
 app.use(cors());
@@ -33,11 +33,17 @@ app.post('/signup', (req, res) => {
         title: 'error',
         error: 'Email already in use'
       })
-    }
-    return res.status(200).json({
+     
+    }else { 
+      
+   console.log("User saved successfuly!")
+   return res.status(200).json({
       title: 'user successfully added'
     })
+  }
   })
+  
+
 });
 
 // Login method
