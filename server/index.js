@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 const jwt = require('jsonwebtoken');
 const User = require('./models/User');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const Todo = require('./models/Todo');
 const mongoose = require('mongoose');
 const dotenv = require("dotenv");
@@ -35,7 +35,7 @@ app.post('/signup', (req, res) => {
       })
      
     }else { 
-      
+
    console.log("User saved successfuly!")
    return res.status(200).json({
       title: 'user successfully added'
