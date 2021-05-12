@@ -13,7 +13,7 @@ interface TodoListProps {
 const TodoList = ({todos, setTodos}: TodoListProps) => {
 
   const markCompleted = (todo: Todo) => {
-    axios.put(`${process.env.TODO}/${todo._id}`, {}, {headers: { token: localStorage.getItem('token')}})
+    axios.put(`https://cloud-project7.herokuapp.com/todo/${todo._id}`, {}, {headers: { token: localStorage.getItem('token')}})
       .then(res => {
         if (res.status === 200) {
           let _todos = todos;

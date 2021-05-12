@@ -7,7 +7,7 @@ import TodoList, { Todo } from "../components/todo/TodoList";
 const Dashboard = () => {
   const [todoList, setTodoList] = React.useState<Todo[]>([]);
   React.useEffect(() => {
-    axios.get(`${process.env.TODOS}`, { headers: { token: localStorage.getItem('token')}})
+    axios.get('https://cloud-project7.herokuapp.com/todos', { headers: { token: localStorage.getItem('token')}})
       .then(res => {
         if (res.status === 200) {
           setTodoList(res.data.todos);

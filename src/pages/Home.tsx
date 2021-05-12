@@ -15,7 +15,10 @@ const [isSignup, setIsSignup] = React.useState<boolean>(false);
         </div>
       </div>
       <div className="w-1/2">
-       <img className="bg-bottom contrast-200 " src= {todoImage} alt="TODO image"/>
+       <img className="bg-bottom contrast-200 " src= {todoImage} alt="TODO image" style={{
+        top : "40%",
+        position:"relative",
+       }}/>
        </div>
     </div>
   )

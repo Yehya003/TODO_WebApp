@@ -11,7 +11,7 @@ const TodoForm = ({todos, setTodos}: TodoFormProps) => {
   const [title, setTitle] = React.useState("");
   const onSubmit = () => {
     if (title.length > 0) {
-      axios.post(`${process.env.TODO}`, {title: title}, {headers: { token: localStorage.getItem('token')}})
+      axios.post('https://cloud-project7.herokuapp.com/todo', {title: title}, {headers: { token: localStorage.getItem('token')}})
         .then(res => {
           if (res.status === 200) {
             let todo = res.data.todo;

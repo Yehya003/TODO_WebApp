@@ -12,7 +12,7 @@ const Signup = ({renderLogin}: SignupProps) => {
   const [disabled, setDisabled] = React.useState(false);
 
   const onSubmit = () => {
-    axios.post(`${process.env.SIGNUP}`, {
+    axios.post('https://cloud-project7.herokuapp.com/signup', {
       username: username,
       password: password
     }).then(res => console.log(res));
