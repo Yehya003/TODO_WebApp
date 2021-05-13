@@ -60,3 +60,5 @@ This allows us to specify a .env file that can contain the values we want for th
 Is an HTTP-header based mechanism that allows a server to indicate any other origins (domain, scheme, or port) than its own from which a browser should permit loading of resources.
 
 ## Front-end specifications & Features
+
+The front-end was developed and designed using React, along with React UI components. The front-end structured in a way to be simpler to understand, debug, tested as well as developing in the future. It was also developed to use axios to communicate with the server (Express.js) to be able to provide the user with the info/operations that needed from the server.
