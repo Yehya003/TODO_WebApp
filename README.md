@@ -44,7 +44,7 @@ Is used for dynamic reloading of the application(web page) after changing any JS
 
 ### Json web Token (JWT)
 
-This is used to authenticate the server requests that based on a pre-condition of login. Scinario, if the user want to make abooking the user needs to be logged in first and then make the booking. The JWT allows to authenticate the requests by using tokens that is sent to the user upon login and then passed to the server along with each request. Furthermore, the server authenticates the token if it is valid the request will be proceed and the resources will be sent to the client-side; if not then a bad request with code 400 will be sent from the server side to client side.
+This is used to authenticate the server requests that based on a pre-condition of login. The JWT allows to authenticate the requests by using tokens that is sent to the user upon login and then passed to the server along with each request. Furthermore, the server authenticates the token if it is valid the request will be proceed and the resources will be sent to the client-side; if not then a bad request with code 400 will be sent from the server side to client side.
 
 ### Bcryptjs
 
