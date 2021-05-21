@@ -61,4 +61,4 @@ Is an HTTP-header based mechanism that allows a server to indicate any other ori
 
 ## Front-end specifications & Features
 
-The front-end was developed and designed using React, along with React UI components. The front-end structured in a way to be simpler to understand, debug, tested as well as developing in the future. It was also developed to use axios to communicate with the server (Express.js) to be able to provide the user with the info/operations that needed from the server.
+The front-end was developed and designed using React, along with tailwind css react. The front-end structured in a way to be simpler to understand, debug, tested as well as developing in the future. It was also developed to use axios to communicate with the server (Express.js) to be able to provide the user with the info/operations that needed from the server.
